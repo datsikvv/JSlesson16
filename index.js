@@ -1,6 +1,15 @@
-let a = require('./a');
-let b = require('./1/2/b');
+// const converter = require('./converter');
 
-//let a = require('../../a');
+// console.log(converter.convertToUa(100));
+// console.log(converter.convertToUs(100));
 
-console.log(a, b);
+// ---------------------------------
+
+const Converter = require('./converter');
+const baseCurrencyUs = 25;
+
+const conv = new Converter(baseCurrencyUs);
+console.log(conv.convertToUa(100));
+console.log(conv.convertToUs(100));
+
+
